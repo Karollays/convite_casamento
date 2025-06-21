@@ -8,6 +8,34 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500;700&display=swap');
     @import url('https://fonts.cdnfonts.com/css/brenda-harmony');
+
+    .titulo-com-folhas {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .titulo-com-folhas h1 {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #8c4c2b;
+      text-align: center;
+    }
+
+    .folha-esquerda,
+    .folha-direita {
+      width: 40px;
+      height: auto;
+    }
+
+    .folha-direita {
+      transform: scaleX(-1); 
+    }
+
+
     body {
       margin: 0;
       padding: 0;
@@ -131,7 +159,13 @@
 </head>
 <body>
   <div class="container">
-    <h1>CHÁ DE C<img src="./img/casa.png" class="icon-casa" alt="Casa">SA NOVA</h1>
+    <div class="titulo-com-folhas">
+      <img src="./img/folha.png" alt="folha esquerda" class="folha-esquerda">
+      <h1>CHÁ DE C<img src="./img/casa.png" class="icon-casa" alt="Casa">SA NOVA</h1>
+      <img src="./img/folha.png" alt="folha direita" class="folha-direita">
+    </div>  
+  
+   
     <div class="script">Victória e Diego</div>
     <p class="verse">“Se você esperar por condições ideais, você nunca fará nada!”<br><strong>Eclesiastes 11:4</strong></p>
 
